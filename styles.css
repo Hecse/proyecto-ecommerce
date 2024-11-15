@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    max-width: 1024px;
+}
+
+.burger i {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+h1 {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+nav {
+    margin: auto;
+    background-color: #ECDFCC;
+    padding: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin-inline-start: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: chocolate;
+}
+
+main {
+    text-align: center;
+}
+
+.libreria {
+    max-width: 100%;
+}
+
+.ofertas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.promociones {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    background-color: #ECDFCC;
+}
+
+.novedades {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 325px;
+    overflow: hidden;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+}
+
+.descripcion {
+    text-align: center;
+}
+
+.detalle {
+    display: flex;
+    justify-content: center;
+    /* padding: 30 px; */
+    /* margin-bottom: 45px; */
+    /* border: solid; */
+}
+
+.detalle-tarjeta {
+    /* border: solid red; */
+    max-width: 1024px;
+    display: flex;
+    align-items: last baseline;
+    text-align: left;
+}
+
+.detalle-tarjeta img {
+    max-width: 40%;
+    margin-top: 5px;
+    /* overflow: hidden; */
+    /* padding: 5px; */
+}
+
+.detalle-text {
+    margin-bottom: 5px;
+    margin-right: 60px;
+}
+
+.contacto {
+    text-align: center;
+    margin: 100px;
+}
+
+.etiqueta {
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    background-color: #ECDFCC;
+    padding: 15px;
+}
+
+footer p {
+    font-size: small;
+}
+
+footer i {
+    font-size: x-large;
+    margin-right: 5px;
+}
+
+.sobre-nosotros {
+    max-width: 40%;
+}
