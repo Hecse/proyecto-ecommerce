@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
     <title>Bestsellers - Contacto</title>
 </head>
 
@@ -13,21 +13,23 @@
     <header>
         <div class="logo">
             <a href="./index.html"><img src="./logo.png" alt="logo"></a>
-            <h1>bestsellers</h1>
+            <a href="./index.html"><h1>best<span>sellers</span></h1></a> 
         </div>
 
         <div class="buscador">
-            <label for="buscar"></label>
-            <input type="text" name="buscar" id="buscar" maxlength="400" placeholder="Buscar" required>
-            <input type="submit" value="buscar">
-            <i class="fi fi-rr-search"></i>
+            <form action="">
+                <label for="buscar"></label>
+                <input type="text" name="buscar" id="buscar" maxlength="400" placeholder="Buscar" required>
+
+                <button><i class="fi fi-rr-search"></i></button>
+            </form>            
         </div>
 
         <div class="carro">
-            <p>0</p>
+            <p class="carro-cantidad">0</p>
             <i class="fi fi-rr-shopping-cart"></i>            
         </div>
-        
+
         <div class="burger">
             <i class="fi fi-rr-menu-burger"></i>
         </div>
@@ -35,53 +37,60 @@
 
     <nav>
         <ul>
-            <li><a href="#">LIBROS</a></li>
-            <li><a href="#">COMICS</a></li>
-            <li><a href="#">MANGAS</a></li>
-            <li><a href="#">OFERTAS</a></li>
-            <li><a href="#">NOVEDADES</a></li>
-            <li><a href="./contacto.html">CONTACTO</a></li>
+            <li><a href="#">Libros</a></li>
+            <li><a href="#">Comics</a></li>
+            <li><a href="#">Mangas</a></li>
+            <li><a href="./ofertas.html">Ofertas</a></li>
+            <li><a href="./promociones.html">Promociones</a></li>
+            <li><a href="./novedades.html">Novedades</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
 
-    <img class="libreria" src="./img/libreria.jpg" alt="libreria">
-
     <main>
-        <div class="contacto">
-            <H3>CONTACTO</H3>
-            <form action="https://formsubmit.co/hecse71@gmail.com" method="post">
-                <div class="etiqueta">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" maxlength="200" placeholder="Nombre y Apellido"
-                        required>
+        <div class="caja-contacto">
+            <div class="contacto">
+                <div class="encabezado-contacto">
+                    <H3>Contacto</H3>
+                    <p>Envienos su consulta y le responderemos a la brevedad</p>
                 </div>
 
-                <div class="etiqueta">
-                    <label for="correo">Correo electronico</label>
-                    <input type="email" name="correo" id="correo" placeholder="Su Correo electronico" required>
-                </div>
+                <form action="https://formsubmit.co/hecse71@gmail.com" method="post" class="formulario-contacto">
+                    <div class="etiqueta-contacto">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" maxlength="200" required>
+                    </div>
 
-                <div class="etiqueta">
-                    <label for="consulta">Consulta:</label>
-                    <textarea name="consulta" id="consulta" placeholder="Escriba su consulta"></textarea>
-                </div>
-                <input type="submit" value="enviar">
-            </form>
+                    <div class="etiqueta-contacto">
+                        <label for="correo">Correo electronico</label>
+                        <input type="email" name="correo" id="correo" required>
+                    </div>
+
+                    <div class="etiqueta-contacto">
+                        <label for="consulta">Consulta</label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="5" required></textarea>
+                    </div>
+
+                    <!-- <input type="submit" value="enviar"> -->
+                    <button type="submit" value="enviar" class="boton-contacto">Enviar</button>
+                </form>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="sobre-nosotros">
             <h4>SOBRE NOSOTROS </h4>
-            <p>BestSelf.co, lanzado en 2015 por Cathryn Lavery, nació del deseo de ayudar a las personas a convertirse
+            <p>BestSelllers.co, lanzado en 2015 por Cathryn Lavery, nació del deseo de ayudar a las personas a convertirse
                 en la mejor versión de sí mismas. Cathryn, que luchaba contra el TDAH y había probado innumerables
                 soluciones, quería crear una herramienta que realmente marcara la diferencia.
-<br>
-<br>
+                <br>
+                <br>
                 Esto llevó a la creación del diario original basado en objetivos, el SELF Journal, que se lanzó en
-                Kickstarter. Recaudó 322 000 dólares en un mes y así nació BestSelf.</P>
+                Kickstarter. Recaudó 322 000 dólares en un mes y así nació BestSelf.
+            </P>
         </div>
-        </div>        
+        </div>
 
         <div><a href="./contacto.html">CONTACTO</a>
             <h4>REDES SOCIALES</h4>
