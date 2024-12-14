@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
-    <title>Bestsellers - Ofertas</title>
+    <title>Bestsellers - Contacto</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
             <a href="./index.html"><img src="./logo.png" alt="logo"></a>
-            <a href="./index.html"><h1>best<span>sellers</span></h1></a>            
+            <a href="./index.html"><h1>best<span>sellers</span></h1></a> 
         </div>
 
         <div class="buscador">
@@ -22,12 +22,12 @@
                 <input type="text" name="buscar" id="buscar" maxlength="400" placeholder="Buscar" required>
 
                 <button><i class="fi fi-rr-search"></i></button>
-            </form>
+            </form>            
         </div>
 
         <div class="carro">
             <p class="carro-cantidad">0</p>
-            <i class="fi fi-rr-shopping-cart"></i>
+            <i class="fi fi-rr-shopping-cart"></i>            
         </div>
 
         <div class="burger">
@@ -40,44 +40,60 @@
             <li><a href="#">Libros</a></li>
             <li><a href="#">Comics</a></li>
             <li><a href="#">Mangas</a></li>
-            <li><a href="#">Ofertas</a></li>
+            <li><a href="./ofertas.html">Ofertas</a></li>
             <li><a href="./promociones.html">Promociones</a></li>
             <li><a href="./novedades.html">Novedades</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
 
-    <div class="foto-libreria">
-        <div class="hero">
-            <p>"Vive como si fueras a morir mañana, aprende como si el mundo fuera a durar para siempre"
-            </p>
-        </div>
-    </div>
-
     <main>
-        <h3 class="seccion">OFERTAS</h3>
-        <section class="ofertas">
-            <!-- se completa con los datos del JSON -->
-        </section>
+        <div class="caja-contacto">
+            <div class="contacto">
+                <div class="encabezado-contacto">
+                    <H3>Contacto</H3>
+                    <p>Envienos su consulta y le responderemos a la brevedad</p>
+                </div>
+
+                <form action="https://formsubmit.co/hecse71@gmail.com" method="post" class="formulario-contacto">
+                    <div class="etiqueta-contacto">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" maxlength="200" required>
+                    </div>
+
+                    <div class="etiqueta-contacto">
+                        <label for="correo">Correo electronico</label>
+                        <input type="email" name="correo" id="correo" required>
+                    </div>
+
+                    <div class="etiqueta-contacto">
+                        <label for="consulta">Consulta</label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="5" required></textarea>
+                    </div>
+
+                    <!-- <input type="submit" value="enviar"> -->
+                    <button type="submit" value="enviar" class="boton-contacto">Enviar</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="sobre-nosotros">
             <h4>SOBRE NOSOTROS </h4>
-            <p>BestSelllers.co, lanzado en 2015 por Cathryn Lavery, nació del deseo de ayudar a las personas a
-                convertirse
+            <p>BestSelllers.co, lanzado en 2015 por Cathryn Lavery, nació del deseo de ayudar a las personas a convertirse
                 en la mejor versión de sí mismas. Cathryn, que luchaba contra el TDAH y había probado innumerables
                 soluciones, quería crear una herramienta que realmente marcara la diferencia.
                 <br>
                 <br>
                 Esto llevó a la creación del diario original basado en objetivos, el SELF Journal, que se lanzó en
-                Kickstarter. Recaudó 322 000 dólares en un mes y así nació Bestsellers.
+                Kickstarter. Recaudó 322 000 dólares en un mes y así nació BestSelf.
             </P>
         </div>
         </div>
 
-        <div>
-            <h4>NUESTRAS REDES SOCIALES</h4>
+        <div><a href="./contacto.html">CONTACTO</a>
+            <h4>REDES SOCIALES</h4>
             <a href="#"><i class="fi fi-brands-instagram"></i></a>
             <a href="#"><i class="fi fi-brands-facebook"></i></a>
             <a href="#"><i class="fi fi-brands-twitter-alt"></i></a>
@@ -85,14 +101,12 @@
 
         <div>
             <h4>MEDIOS DE PAGO</h4>
-            <i class="fi fi-brands-visa"></i>
-            <i class="fi fi-brands-paypal"></i>
-            <i class="fi fi-brands-american-express"></i>
+            <a href="#"><i class="fi fi-brands-visa"></i> </a>
+            <a href="#"><i class="fi fi-brands-paypal"></i></a>
+            <a href="#"><i class="fi fi-brands-american-express"></i></a>
             <p>© 2024 Bestsellers SRL. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <script src="./ofertas.js"></script>
 </body>
 
 </html>

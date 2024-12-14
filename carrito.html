@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
-    <title>Bestsellers - Ofertas</title>
+    <title>Carrito</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
             <a href="./index.html"><img src="./logo.png" alt="logo"></a>
-            <a href="./index.html"><h1>best<span>sellers</span></h1></a>            
+            <a href="./index.html">
+                <h1>best<span>sellers</span></h1>
+            </a>
         </div>
 
         <div class="buscador">
@@ -27,7 +29,7 @@
 
         <div class="carro">
             <p class="carro-cantidad">0</p>
-            <i class="fi fi-rr-shopping-cart"></i>
+            <a href="#"><i class="fi fi-rr-shopping-cart"></i></a>
         </div>
 
         <div class="burger">
@@ -47,18 +49,84 @@
         </ul>
     </nav>
 
-    <div class="foto-libreria">
-        <div class="hero">
-            <p>"Vive como si fueras a morir mañana, aprende como si el mundo fuera a durar para siempre"
-            </p>
-        </div>
-    </div>
-
     <main>
-        <h3 class="seccion">OFERTAS</h3>
-        <section class="ofertas">
-            <!-- se completa con los datos del JSON -->
-        </section>
+        <div class="carrito-productos">
+            <div class="carrito-producto">
+                <img class="carrito-producto-imagen" src="./img/01.jpg" alt="01">
+                <div class="carrito-producto-titulo">
+                    <small>Título</small>
+                    <h4>Titulo</h4>
+                </div>
+
+                <div class="carrit-producto-cantidad">
+                    <small>Cantidad</small>
+                    <h4>+ 2 -</h4>
+                </div>
+
+                <div class="carrito-producto-precio">
+                    <small>Precio</small>
+                    <p>$20</p>
+                </div>
+
+                <div class="carrito-producto-subtotal">
+                    <small>Subtotal</small>
+                    <p>$40</p>
+                </div>
+
+                <button class="carrito-producto-eliminar">
+                    <i class="fi fi-rr-trash"></i>
+                </button>
+            </div>
+
+
+            <div class="carrito-producto">
+                <img class="carrito-producto-imagen" src="./img/02.jpg" alt="02">
+                <div class="carrito-producto-titulo">
+                    <small>Título</small>
+                    <h4>Titulo</h4>
+                </div>
+
+                <div class="carrito-producto-cantidad">
+                    <small>Cantidad</small>
+                    <h4>+ 1 -</h4>
+                </div>
+
+                <div class="carrito-producto-precio">
+                    <small>Precio</small>
+                    <p>$10</p>
+                </div>
+
+                <div class="carrito-producto-subtotal">
+                    <small>Subtotal</small>
+                    <p>$10</p>
+                </div>
+
+                <button class="carrito-producto-eliminar">
+                    <i class="fi fi-rr-trash"></i>
+                </button>
+            </div>
+
+            <div class="carrito-producto-acciones">
+                <div>
+                    <button class="boton-vaciar-carrito">Vaciar carrito</button>
+                </div>
+
+                <div class="carrito-productos-total">
+                    <div>
+                        <p>Total</p>
+                    </div>
+
+                    <div>
+                        <p id="total">$50</p>
+                    </div>
+
+                    <div>
+                        <button class="boton-productos-comprar">Comprar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -91,8 +159,7 @@
             <p>© 2024 Bestsellers SRL. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <script src="./ofertas.js"></script>
+</body>
 </body>
 
 </html>
