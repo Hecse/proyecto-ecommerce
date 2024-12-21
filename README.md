@@ -10,4 +10,6 @@ Tiene además enlazado una página de estilos "styles.css"
 
 Se agregó fuentes y colores de fondo en el `<nav>`, en el `<footer>` y en una de las `<section>`
 
-Me falta resolver el responsive y usar grid en alguna parte
+Se trajo desde un JSON los datos para crear las tajetas, además se usó el localStorage para darle funcionalidad al Carrito de Compras
+
+Me faltó validar el formulario con JS y algunos detalles estéticos como poner un cartelito de "Su carrito está vacio" 
