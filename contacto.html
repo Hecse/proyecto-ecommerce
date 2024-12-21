@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Bestsellers - Contacto</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="./index.html"><img src="./logo.png" alt="logo"></a>
-            <a href="./index.html"><h1>best<span>sellers</span></h1></a> 
+            <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+            <a href="./index.html">
+                <h1>best<span>sellers</span></h1>
+            </a>
         </div>
 
         <div class="buscador">
@@ -22,24 +24,21 @@
                 <input type="text" name="buscar" id="buscar" maxlength="400" placeholder="Buscar" required>
 
                 <button><i class="fi fi-rr-search"></i></button>
-            </form>            
+            </form>
         </div>
 
         <div class="carro">
-            <p class="carro-cantidad">0</p>
-            <i class="fi fi-rr-shopping-cart"></i>            
+            <!-- se completa con los datos del localStorage -->
         </div>
 
-        <div class="burger">
-            <i class="fi fi-rr-menu-burger"></i>
-        </div>
+        <button id="abrir" class="burger">
+            <i class="fi fi-br-menu-burger"></i>
+        </button>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Libros</a></li>
-            <li><a href="#">Comics</a></li>
-            <li><a href="#">Mangas</a></li>
+    <nav id="nav" class="nav">
+        <button id="cerrar" class="equis"><i class="fi fi-br-cross"></i></button>
+        <ul class="nav-list">
             <li><a href="./ofertas.html">Ofertas</a></li>
             <li><a href="./promociones.html">Promociones</a></li>
             <li><a href="./novedades.html">Novedades</a></li>
@@ -107,6 +106,8 @@
             <p>© 2024 Bestsellers SRL. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="./scripts/contacto.js"></script>
 </body>
 
 </html>

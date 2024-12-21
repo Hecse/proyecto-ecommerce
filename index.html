@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Bestsellers</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="#"><img src="./logo.png" alt="logo"></a>
-            <a href="#"><h1>best<span>sellers</span></h1></a>            
+            <a href="#"><img src="./img/logo.png" alt="logo"></a>
+            <a href="#">
+                <h1>best<span>sellers</span></h1>
+            </a>
         </div>
 
         <div class="buscador">
@@ -26,20 +28,17 @@
         </div>
 
         <div class="carro">
-            <p class="carro-cantidad">0</p>
-            <a href="./carrito.html"><i class="fi fi-rr-shopping-cart"></i></a>            
+            <!-- se completa con los datos del localStorage -->
         </div>
 
-        <div class="burger">
-            <i class="fi fi-rr-menu-burger"></i>
-        </div>
+        <button id="abrir" class="burger">
+            <i class="fi fi-br-menu-burger"></i>
+        </button>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Libros</a></li>
-            <li><a href="#">Comics</a></li>
-            <li><a href="#">Mangas</a></li>
+    <nav id="nav" class="nav">
+        <button id="cerrar" class="equis"><i class="fi fi-br-cross"></i></button>
+        <ul class="nav-list">
             <li><a href="./ofertas.html">Ofertas</a></li>
             <li><a href="./promociones.html">Promociones</a></li>
             <li><a href="./novedades.html">Novedades</a></li>
@@ -57,10 +56,10 @@
     <main>
         <h3 class="seccion">OFERTAS</h3>
         <section class="ofertas">
-            <!-- se completa con los datos del JSON -->            
+            <!-- se completa con los datos del JSON -->
         </section>
 
-       <h3 class="seccion">PROMOCIONES</h3>
+        <h3 class="seccion">PROMOCIONES</h3>
         <section class="promociones">
             <!-- se completa con los datos del JSON -->
         </section>
@@ -102,7 +101,7 @@
         </div>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
