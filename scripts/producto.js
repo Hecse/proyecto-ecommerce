@@ -5,6 +5,18 @@ let datos = [];
 const carro = document.querySelector(`.carro`);
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click", () => {
+  nav.classList.add("visible");
+});
+
+cerrar.addEventListener("click", () => {
+  nav.classList.remove("visible");
+});
+
 async function buscarDatos() {
   try {
     let data = await fetch("./scripts/productos.json")
@@ -27,17 +39,21 @@ async function iniciar() {
   <div class="producto-tarjeta">
                 <div class="producto-imagen">
                     <img src=${libro.imagen} alt=${libro.titulo}>
-                </div>
 
+                    <button data-id="${libro.id}" class="producto-boton-carrito">Agregar al carrito <i class="fi fi-rr-shopping-cart"></i> </button>
+                </div>
+                                
                 <div class="producto-detalle">
-                <small>${libro.categoria}</small>
+                    <small>${libro.categoria}</small>
                     <div class="titulo">
                         <h3>${libro.titulo}</h3>
                         <h4>${libro.autor}</h4>
                     </div>
 
                     <div class="precio">
-                        <h4>$ ${libro.precio}</h4>
+                        <h4>$ ${new Intl.NumberFormat().format(
+                          libro.precio
+                        )},00</h4>
                     </div>
 
                     <div class="medios-de-pago">
@@ -47,12 +63,11 @@ async function iniciar() {
                         <i class="fi fi-brands-american-express"></i>
                     </div>
 
-                    <button  data-id="${libro.id}"  class="boton-carrito">Agregar al carrito <i class="fi fi-rr-shopping-cart"></i> </button>
+                    <div class="producto-descripcion">
+                        <p>${libro.descripcion}</p>
+                    </div>
                 </div>
 
-                <div class="producto-descripcion">
-                    <p>${libro.descripcion}</p>
-                </div>
             </div>
 `;
   agregarAlCarrito(datos);
@@ -62,7 +77,7 @@ iniciar();
 
 function agregarAlCarrito(unArray) {
   document.addEventListener("click", (event) => {
-    if (event.target.classList.contains("boton-carrito")) {
+    if (event.target.classList.contains("producto-boton-carrito")) {
       const id = event.target.dataset.id;
 
       const producto = unArray.find((producto) => producto.id == id);

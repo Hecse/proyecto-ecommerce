@@ -75,7 +75,7 @@ function pintarTarjetasOfertas(unArray) {
 
                     <div class="descripcion">
                         <h4>${libro.titulo}</h4>
-                        <p>Precio $ ${libro.precio}</p>
+                        <p>$ ${new Intl.NumberFormat ().format (libro.precio)},00</p>
                     </div>
                 </a>
 

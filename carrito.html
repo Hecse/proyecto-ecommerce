@@ -31,13 +31,14 @@
             <!-- se completa con los datos del localStorage -->
         </div>
 
-        <div class="burger">
-            <i class="fi fi-rr-menu-burger"></i>
-        </div>
+        <button id="abrir" class="burger">
+            <i class="fi fi-br-menu-burger"></i>
+        </button>
     </header>
 
-    <nav>
-        <ul>
+    <nav id="nav" class="nav">
+        <button id="cerrar" class="equis"><i class="fi fi-br-cross"></i></button>
+        <ul class="nav-list">
             <li><a href="./ofertas.html">Ofertas</a></li>
             <li><a href="./promociones.html">Promociones</a></li>
             <li><a href="./novedades.html">Novedades</a></li>
@@ -46,8 +47,20 @@
     </nav>
 
     <main>
+        <div class="carrito-vacio">
+            <h3>Su carrito está vacio</h3>
+        </div>
+
+        <div class="carrito-comprado">
+            <!-- se completa con los datos del JS -->
+        </div>
+
         <div class="carrito-productos">
-            <h3>SU CARRITO ESTÁ VACIO</h3>
+            <!-- se completa con los datos del localStorage -->
+        </div>
+
+        <div class="seguir-comprando">
+            <a href="./index.html"><button class="boton-seguir-comprando">Ver mas productos</button></a>
         </div>
 
         <div class="contenedor-carrito-productos-acciones">
@@ -71,7 +84,6 @@
                 </div>
             </div>
         </div>
-
     </main>
 
 
