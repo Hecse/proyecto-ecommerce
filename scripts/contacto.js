@@ -1,5 +1,6 @@
 const carro = document.querySelector(`.carro`);
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+const formulario = document.querySelector("form");
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
@@ -21,3 +22,20 @@ function actualizarCantidad() {
   }
   
   actualizarCantidad();
+
+  // Validacion del formulario
+
+  /* formulario.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const nombre = document.querySelector("#nombre");
+    const correo = document.querySelector("#correo");
+    const consulta = document.querySelector("#consulta");
+    const nombreError = document.querySelector("#nombre-error");
+    console.log(nombre.value.length);
+    
+    if (nombre.value.length < 3) {
+      nombreError.textContent = "El nombre debe tener mas de dos caracteres";
+    }
+
+  }) */
