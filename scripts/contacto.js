@@ -1,5 +1,6 @@
 const carro = document.querySelector(`.carro`);
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
 const email = {
   nombre: "",
   correo: "",
@@ -9,6 +10,16 @@ const email = {
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
+
+const nombre = document.querySelector("#nombre");
+//const nombreError = document.querySelector("#nombre-error");
+const correo = document.querySelector("#correo");
+const consulta = document.querySelector("#consulta");
+const btnEnviar = document.querySelector(".formulario-contacto button");
+
+nombre.addEventListener("input", validar);
+correo.addEventListener("input", validar);
+consulta.addEventListener("input", validar);
 
 // Menu hamburguesa
 abrir.addEventListener("click", () => {
@@ -29,34 +40,28 @@ function actualizarCantidad() {
 
 actualizarCantidad();
 
-// Validacion del formulario 2
-const nombre = document.querySelector("#nombre");
-const nombreError = document.querySelector("#nombre-error");
-const correo = document.querySelector("#correo");
-const consulta = document.querySelector("#consulta");
-
-nombre.addEventListener("blur", validar);
-correo.addEventListener("blur", validar);
-consulta.addEventListener("blur", validar);
-
+// Validacion del formulario
 function validar(e) {
-  // console.log(e.target.parentElement);
   if (e.target.value.trim() === "") {
     escribirMensaje(
-      `Por favor indique un ${e.target.id}`,
+      `Por favor indique su ${e.target.id}`,
       e.target.parentElement
     );
+    email[e.target.name] = ""
+    comprobarEmail();
     return;
   }
   if (e.target.id === "correo" && !validarEmail(e.target.value)) {
     escribirMensaje("El email no es valido", e.target.parentElement);
+    email[e.target.name] = ""
+    comprobarEmail();
     return;
   }
   borrarAlerta(e.target.parentElement);
   email[e.target.name] = e.target.value.trim().toLowerCase();
-  console.log(email)
+  //console.log(email);
 
-  comprobarEmail()
+  comprobarEmail();
 }
 
 function escribirMensaje(mensaje, referencia) {
@@ -84,10 +89,10 @@ function validarEmail(email) {
   return resultado;
 }
 
-/* function comprobarEmail() {
-  if(Object.values(email).includes("")) {
-
-  } else {
-
+function comprobarEmail() {
+  if (Object.values(email).includes("")) {
+    btnEnviar.classList.add("disabled");
+    return;
   }
-} */
+  btnEnviar.classList.remove("disabled");
+}

@@ -215,6 +215,7 @@ a:hover {
 
 .tarjeta-boton {
     border: 0;
+    opacity: 1;
     background-color: #db6e01;
     color: #ECDFCC;
     padding: 0.5rem;
@@ -400,15 +401,20 @@ textarea {
 
 .boton-contacto {
     border: 0;
-    background-color: #db6e01;
+    background-color: #db6e01;    
     color: #ECDFCC;
     padding: 0.5rem;
     border-radius: 1rem;
-    cursor: point;
+    cursor: pointer;
     border: 2px solid #db6e01;
     letter-spacing: 1px;
     transition: 0.4s;
     width: 30%;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .boton-contacto:hover {
