@@ -1,0 +1,49 @@
+Libros
+
+id:
+titulo:
+autor:
+precio:
+descripcion:
+categoria:
+imagen:
+
+
+[ 
+{ 
+"id": 1, 
+"titulo": "Primer post", 
+"autor": "Juan",
+"precio": "Juan",
+"descripcion": "Juan",
+"categoria": "Juan", 
+"imagen": "Juan", 
+ }
+{ 
+"id": 2, 
+"title": "Segundo post", 
+"author": "María" } 
+]
+
+DE MI PARA MI
+De mi para mi
+de_mi_para_mi
+Chriss Braund, Portal Arraez Nacarid
+Nunca es tarde para otorgarte una segunda oportunidad. Cada día puedes empezar de nuevo, aprender de las experiencias que te hirieron, y avanzar hacia un futuro mejor. Por mucho tiempo te has juzgado, y en este viaje, uno de los destinos será el perdón. Mereces cerrar los ojos abrazando tus logros, aunque te sientas muy lejos de la meta, estás avanzando por la escalera de la vida, donde cada peldaño ya es un triunfo. Si estás leyendo esto, es porque nos merecemos un viaje en el que naveguemos sin juzgarnos por cada error, y entendamos que los problemas, aunque se aparezcan juntos y traten de derrumbamos, no lo lograrán. Es tiempo de enfrentar los inconvenientes con paciencia descubriendo esa fortaleza que tenemos. Porque tenemos el poder de empezar de nuevo todas las veces que sean necesarias, recuérdalo. Este libro es para encendernos en la noche mas oscura, para atravesar las crisis, para despedirnos de ese amor que acabó, o de ese amor que se fue al cielo. Un libro para reencontramos, para convertirnos en desconocidos que se vuelven amigos, y tienen derecho a llorar, a reir, a tocar fondo y coger impulso hasta tocar las nubes. Porque después de este viaje, ninguna tempestad va a debilitarnos, saldremos de ella fortalecidos, y con más motivación para superar lo que sea que nos depare la vida. Quizá hoy tienes mucho en tu mente, y piensas que no podras, pero iremos con calma, sin prisa, y poco a poco...La tormenta pasará
+https://acdn.mitiendanube.com/stores/004/574/390/products/rci-egrdmiparmi9789801837237-9f874b0f9244d84afa17337679316746-640-0.webp
+
+KICK-ASS TOMO 01
+kick_ass_tomo_01
+
+BOX SET WOTAKOI TOMOS 01 AL 11 (COMPLETO)
+box_set_wotakoi_tomos_01_al_11_(completo)
+
+SOCORRO 12 CUENTOS PARA CAERSE DE MIEDO
+socorrro_12_cuentos_para_caerse_de_miedo
+Elsa Bornemann
+
+Doctor strange 02 el doctor strange de la muerte
+doctor_strange_02_el_doctor_strange_de_la_muerte
+Jed Mackay, Lee Garbett
+Catalogo, Comic, Americano
+¿Cuál será el próximo movimiento de Clea?Alguien ha robado trozos de la memoria de Wong y va a necesitar recuperarlos para detener al Cartel de la Blasfemia. Depende de Wong y de Bats volver sobre sus pasos y descubrir la verdad sobre lo que le han robado... ¿Pero será mejor olvidar algunos recuerdos? Mientras Clea y Wong descubren por fin quién está detrás de las resurrecciones zombis de héroes y villanos fallecidos, van a necesitar toda la ayuda posible, incluso del Hechicero Supremo de la Muerte: ¡El Cosechador! Además: Los secretos del Cartel de la Blasfemia son revelados por la fuente más insospechada! El Cartel desata su arma más mortífera, pero ¿qué es? ¿o quién? Mientras se cierra un capítulo, uno nuevo está por comenzar en la casa de Strange.
